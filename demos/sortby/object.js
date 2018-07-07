@@ -11,3 +11,9 @@ let obj = {
 console.log(_.sortBy(obj));
 // [ 'alex', 'bar', 'beta', 'zulu' ]
 
+
+let sortKeys = _.sortBy(Object.keys(obj));
+
+console.log(sortKeys);
+// [ 'alpha', 'foo', 'name', 'time' ]
+

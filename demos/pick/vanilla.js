@@ -11,7 +11,7 @@ let day = {
         }, {
             path: '/2017/01/02/hello-again/',
             users: 7,
-            pgeviews: 9
+            pageviews: 9
         }
 
     ]

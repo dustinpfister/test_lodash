@@ -21,8 +21,8 @@ let custom = _.pick(day, ['date','users','pages']);
 
 // what is returned is a shallow clone
 day.users += 50;
-console.log(day.users); // 53
-console.log(custom.users); // 53
+console.log(day.users); // 60
+console.log(custom.users); // 10
 
 // but not a deep clone
 day.pages[0].users += 50;

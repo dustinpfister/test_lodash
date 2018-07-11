@@ -24,5 +24,5 @@ let custom = _.pick(_.cloneDeep(day), ['date','pages']);
 day.pages[0].users += 50;
 
 console.log(day.pages[0].users); // 53
-console.log(custom.pages[0].users); // 53
+console.log(custom.pages[0].users); // 3
 

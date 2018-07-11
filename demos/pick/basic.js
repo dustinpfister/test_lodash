@@ -17,4 +17,4 @@ var day = {
     ]
 };
 
-console.log(_.pick(day, ['date', 'users']));
+console.log( _.pick(day, ['date', 'users']) );

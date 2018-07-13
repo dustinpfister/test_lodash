@@ -23,52 +23,36 @@ let grid = {
     chunkToCols : function(){
 
         // _.zip is useful for doing this
-        return _.zip.apply(null, this.chunkToRows());
-
-    },
-
-    // get a row by index
-    getRow: function (i) {
-
-        return this.chunkIt()[i];
-
-    },
-
-    // get a col by index
-    getCol: function (index) {
-
-        return _.map(this.chunkIt(), function (row) {
-
-            return row[index];
-
-        });
+        return _.zip.apply(0, this.chunkToRows());
 
     },
 
     // get a Random row, col or cell
-    getRnd: function(what){
+    rnd: function(what){
 
-        what = what || 'cell';
+       what = what || 'cell';
 
-		/*
-		if(what === 'row'){
-			
-			return this.getRow
-			
-		}
-		*/
-		
-        // for a random cell just return a sample from the whole set
+       // get a random row
+       if(what === 'row'){
+
+            return _.sample(this.chunkToRows());
+
+        }
+
+       // get a random col
+       if(what === 'col'){
+
+           return _.sample(this.chunkToCols());
+
+       }
+
+        // default to getting a random single cell
         return _.sample(this.cells);
 
     }
 
 };
 
-console.log(grid.chunkToCols());
-
-// get row 1
-//console.log(grid.getRow(1));
-
-// get col 1
-//console.log(grid.getCol(1));
+console.log(grid.rnd());
+console.log(grid.rnd('row'));
+console.log(grid.rnd('col'));

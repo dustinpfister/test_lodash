@@ -62,8 +62,7 @@ let day = new Day({
     });
 
 // my bound rate works
-console.log(day.bounceRate());
-
+console.log(day.bounceRate()); // 0.7692307692307693
 console.log( day.constructor.name ); // day
 
 let custom = _.pick(day, ['date', 'pages']);
@@ -76,3 +75,4 @@ console.log( custom.constructor.name ); // Day
 
 console.log(custom.bounceRate());
 
+console.log( {}.constructor.name );

@@ -93,8 +93,6 @@ let grid = {
 
 };
 
-//console.log(grid.chunkToCols());
-
 console.log(grid.rnd());
 console.log(grid.rnd('row'));
 console.log(grid.rnd('col'));

@@ -12,7 +12,7 @@ let printStatus = function (match) {
 
     console.log('********** **********');
     console.log('Turn Number: ' + match.turn);
-    console.log('Current Player: ' + match.players[match.playerIndex].name);
+    console.log('Current Player: ' + match.players[match.activeIndex].name);
 	console.log('active players:' + match.activePlayers);
     console.log('Players Orbs: ');
 
@@ -54,8 +54,30 @@ orb.targets.push(match.players[1].pouch[0]);
 
 match.endTurn();
 match.endTurn();
+
+match.endTurn();
 match.endTurn();
 
+match.endTurn();
+match.endTurn();
+
+match.endTurn();
+match.endTurn();
+
+match.endTurn();
+match.endTurn();
+
+match.endTurn();
+match.endTurn();
+
+match.endTurn();
+match.endTurn();
+
+match.endTurn();
+match.endTurn();
+
+match.endTurn();
+match.endTurn();
 
 
 printStatus(match);

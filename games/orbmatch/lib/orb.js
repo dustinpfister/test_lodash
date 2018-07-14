@@ -27,8 +27,6 @@ Orb.prototype.attackedBy = function(attacker){
 
    damage = attack - defence;
 
-   console.log(damage);
-
    if(damage < 0){
 
        damage = 0;

@@ -8,8 +8,8 @@ let Match = function (options) {
     this.players = options.players || [];
     this.activePlayers = []; // indexes of players that are active
     this.turn = 0;
-    this.playerIndex = 0; // the index of the current player who has to move
 
+    this.activeIndex = 0; // the index of the current player who has to move
     this.findActivePlayers();
 
 };
@@ -36,38 +36,32 @@ Match.prototype.findActivePlayers = function () {
 // end the current turn
 Match.prototype.endTurn = function () {
 
-    let gameOver = false,
-    match = this;
+    let match = this;
 
     // call Orb.onMove for all orbs of current player
-    _.each(this.players[this.playerIndex].pouch, function (orb) {
+    _.each(this.players[this.activeIndex].pouch, function (orb) {
 
         orb.onMove();
 
     });
 
-    // update players
-    //_.each(this.players, function (player) {
 
-    //    player.update();
+    // update active players
+    _.each(this.activePlayers, function (activeIndex) {
 
-    //});
-
-    //update active players
-    _.each(this.activePlayers, function (playerIndex) {
-
-        match.players[playerIndex].update();
+        match.players[activeIndex].update();
 
     });
 
+    // find active player count
     match.findActivePlayers();
 
-    if (!gameOver) {
+    if (match.activePlayers.length >= 2) {
 
         // step playindex, and turn
-        this.playerIndex += 1;
-        if (this.playerIndex === this.players.length) {
-            this.playerIndex = 0;
+        this.activeIndex += 1;
+        if (this.activeIndex === this.activePlayers.length) {
+            this.activeIndex = 0;
             this.turn += 1;
 
         }

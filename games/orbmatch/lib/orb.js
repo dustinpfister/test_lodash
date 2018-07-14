@@ -7,7 +7,7 @@ let Orb = function(){
 
     this.hpMax = 15;
     this.hp = this.hpMax; //Math.floor(this.hpMax * .75);
-    this.attack = [1,5];
+    this.attack = [4,8];
     this.defence = [0,3];
     this.heal = 1;
 

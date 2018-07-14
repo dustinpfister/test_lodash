@@ -1,6 +1,6 @@
 /*
 A CLI version of OrbMatch
-*/
+ */
 
 let Player = require('./lib/player'),
 Orb = require('./lib/orb'),
@@ -13,13 +13,14 @@ let printStatus = function (match) {
     console.log('********** **********');
     console.log('Turn Number: ' + match.turn);
     console.log('Current Player: ' + match.players[match.playerIndex].name);
+	console.log('active players:' + match.activePlayers);
     console.log('Players Orbs: ');
 
     match.players.forEach(function (player) {
 
         console.log('    player: ' + player.name);
-		console.log('    hp: ' + player.hp + '\/' + player.hpMax);
-		console.log('    orbs:');
+        console.log('    hp: ' + player.hp + '\/' + player.hpMax);
+        console.log('    orbs:');
         player.pouch.forEach(function (orb) {
 
             console.log('        ' + JSON.stringify(orb));
@@ -47,7 +48,14 @@ let match = new Match({
 
     });
 
+let orb = match.players[0].pouch[0];
+orb.active = true;
+orb.targets.push(match.players[1].pouch[0]);
+
+match.endTurn();
+match.endTurn();
 match.endTurn();
 
-printStatus(match);
 
+
+printStatus(match);

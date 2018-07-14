@@ -1,6 +1,11 @@
-let Player = require('./player'),
-Orb = require('./orb'),
-Match = require('./match');
+/*
+A CLI version of OrbMatch
+*/
+
+let Player = require('./lib/player'),
+Orb = require('./lib/orb'),
+fs = require('fs'),
+Match = require('./lib/match');
 
 // print status helper
 let printStatus = function (match) {
@@ -12,10 +17,12 @@ let printStatus = function (match) {
 
     match.players.forEach(function (player) {
 
-        console.log('    player ' + player.name + ' orbs')
+        console.log('    player: ' + player.name);
+		console.log('    hp: ' + player.hp + '\/' + player.hpMax);
+		console.log('    orbs:');
         player.pouch.forEach(function (orb) {
 
-            console.log('    ' + JSON.stringify(orb));
+            console.log('        ' + JSON.stringify(orb));
 
         });
 

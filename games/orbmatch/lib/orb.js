@@ -6,7 +6,7 @@ let Orb = function(){
     this.targets = []; // an array of one or more target Orbs to attack
 
     this.hpMax = 15;
-    this.hp = Math.floor(this.hpMax * .75);
+    this.hp = this.hpMax; //Math.floor(this.hpMax * .75);
     this.attack = [1,5];
     this.defence = [0,3];
     this.heal = 1;

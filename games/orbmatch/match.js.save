@@ -1,0 +1,36 @@
+let _ = require('lodash');
+
+let Player = function(){
+
+    this.name = options.name || 'dustindawind';    this.hp = 100;
+    this.attack = 10;
+    this.action = 'attack';
+
+    //this.pouch = options.pouch || [];
+    //this.sockets = options.sockets || {};
+    //this.maxActive = 2;
+
+};
+
+// a Match instance between two players
+let Match = function(options){
+
+    this.players = [];
+    this.turn ={
+        playerIndex: 0, // the index of the current player who has to move
+        number: 0  // the turn number
+    }
+
+};
+
+// end the turn for the current player
+Match.prototype.endTurn = function(){
+
+    let player = this.players[this.turn.playerIndex];
+
+
+
+};
+
+
+module.exports = Match;

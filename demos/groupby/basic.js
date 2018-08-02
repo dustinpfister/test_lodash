@@ -1,34 +1,11 @@
 let _ = require('lodash');
 
-let scores = [{
-        name: 'Math',
-        score: 83
-    }, {
-        name: 'Programing',
-        score: 100
-    }, {
-        name: 'PE',
-        score: 72
-    }, {
-        name: 'English',
-        score: 42
-    }, {
-        name: 'Bio',
-        score: 58
-    }
-];
+let nums = [2,20,4,3,7,8,32,42,256];
 
-let byFail = _.groupBy(scores, function (sub) {
-        if (sub.score < 65) {
+let grouped = _.groupBy(nums, function (n) {
 
-            return 'fail';
-        }
-        return 'pass';
+    return String(Math.log(n) / Math.log(2)).indexOf('.') === -1 ? 'pow2': 'notPow2';
+
     });
 
-// so now I have an object with pass, and fail keys
-_.each(byFail.pass, function (sub) {
-
-    console.log(sub.name); //Math, Programing, PE
-
-})
+console.log(grouped);

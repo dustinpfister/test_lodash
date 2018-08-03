@@ -49,3 +49,9 @@ let grade = function (clases) {
 };
 
 console.log(grade(clases));
+
+//{ 'B.': [ { name: 'Math', score: 83 } ],
+//  'A+': [ { name: 'Programing', score: 100 },{ name: 'Art', score: 98 } ],
+//  'A.': [ { name: 'PE', score: 93 } ],
+//  'F.': [ { name: 'English', score: 42 } ],
+//  'D-': [ { name: 'Bio', score: 60 } ] }

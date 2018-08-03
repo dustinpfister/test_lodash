@@ -2,40 +2,18 @@ let _ = require('lodash');
 
 let byBase = function (collection, bases) {
 
-    if (!collection || bases === undefined) {
-
-        return {};
-
-    }
-
-    bases = typeof bases === 'string' ? Number(bases) : bases;
-    bases = typeof bases === 'number' ? [].push(bases) : bases;
-
     return _.groupBy(collection, function (n) {
 
         let b = -1;
-
-        if (typeof n === 'boolean') {return 'none';}
-
-        // make sure they type if Number
-        n = Number(n);
-
-        // group to 'none' if NaN
-        if (_.isNaN(n)) {
-            return 'none';
-        }
 
         // group by first base that is found in bases
         _.forEach(bases, function (base) {
 
             let log = _.round(Math.log(n) / Math.log(base), 4);
 
-            console.log(n, base, log);
-
             if (String(log).indexOf('.') === -1) {
 
                 b = base;
-
                 // returning false will break _.forEach
                 return false;
 
@@ -57,6 +35,11 @@ let byBase = function (collection, bases) {
 
 };
 
-let nums = [2, 49, 20, 4, true, , false, 3, 7, 8, undefined, 32, 'what me worry?', 42, 27, 343, 256];
+let nums = [27,9,256,49,2,16,42,3,1024,20];
 
-console.log(byBase(nums, [2, 3, 7]))
+console.log(byBase(nums, [2, 3, 7]));
+
+//{ '2': [ 256, 2, 16, 1024 ],
+//  '3': [ 27, 9, 3 ],
+//  '7': [ 49 ],
+//  none: [ 42, 20 ] }

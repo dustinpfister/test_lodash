@@ -1,15 +1,16 @@
 let _ = require('lodash');
 
 let clases = [
-    {name: 'Math',score: 83},
-    {name: 'Programing',score: 100},
-    {name: 'Art',score: 98}, {name: 'PE',score: 93},
-    {name: 'English',score: 42},
-    {name: 'Bio',score: 60}
+    {name: 'Math',grade: 83},
+    {name: 'Programing',grade: 100},
+    {name: 'Art',grade: 98}, 
+    {name: 'PE',grade: 93},
+    {name: 'English',grade: 42},
+    {name: 'Bio',grade: 60}
 ];
 
 // grade method that uses _.groupBy
-let grade = function (clases) {
+let gradeClases = function (clases) {
 
     let letters = {
         'A+': 98,
@@ -33,7 +34,7 @@ let grade = function (clases) {
 
         _.forEach(letters, function (g, letter) {
 
-            if (sub.score >= g) {
+            if (sub.grade >= g) {
 
                 key = letter;
                 return false;
@@ -48,10 +49,10 @@ let grade = function (clases) {
 
 };
 
-console.log(grade(clases));
+console.log(gradeClases(clases));
 
-//{ 'B.': [ { name: 'Math', score: 83 } ],
-//  'A+': [ { name: 'Programing', score: 100 },{ name: 'Art', score: 98 } ],
-//  'A.': [ { name: 'PE', score: 93 } ],
-//  'F.': [ { name: 'English', score: 42 } ],
-//  'D-': [ { name: 'Bio', score: 60 } ] }
+//{ 'B.': [ { name: 'Math', grade: 83 } ],
+//  'A+': [ { name: 'Programing', grade: 100 },{ name: 'Art', grade: 98 } ],
+//  'A.': [ { name: 'PE', grade: 93 } ],
+//  'F.': [ { name: 'English', grade: 42 } ],
+//  'D-': [ { name: 'Bio', grade: 60 } ] }

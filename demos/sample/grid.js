@@ -27,6 +27,16 @@ let grid = {
 
     },
 
+    // set the cells array from a set of rows, or cols
+    fromMatrix : function(matrix){
+
+        this.cells = _.flatten(matrix);
+        this.w = matrix.length;
+
+        return this.cells;
+
+    },
+
     // get a Random row, col or cell
     rnd: function(what){
 
@@ -53,6 +63,14 @@ let grid = {
 
 };
 
-console.log(grid.rnd());
-console.log(grid.rnd('row'));
-console.log(grid.rnd('col'));
+// set from matrix
+grid.fromMatrix([
+
+  [{g:3},{g:0},{g:1}],
+  [{g:0},{g:0},{g:0}],
+  [{g:1},{g:0},{g:0}]
+
+]);
+
+console.log('width: ' + grid.w);
+console.log('cells: ' + JSON.stringify(grid.cells));

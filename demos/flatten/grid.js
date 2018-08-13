@@ -48,16 +48,17 @@ let grid = (function () {
 }
     ());
 
-// money, and tab money
+// gen a map with random amounts of money in it
 grid.genMap({
     w: 3,
     h: 3,
     forPos: function (x, y, i) {
         this.money = _.random(0, 5);
     }
-
 });
-
+ 
+// A Tab money method that makes use of \_flatten
+// to flatten the grid back to a linear array
 var tabMoney = function () {
     var grid = this;
     return _.reduce(_.flatten(grid.grid), function (acc, obj) {
@@ -66,7 +67,7 @@ var tabMoney = function () {
         }
     }).money;
 };
-
+ 
 console.log(grid.grid);
 console.log(tabMoney.call(grid, grid));
 /*

@@ -17,7 +17,7 @@ let enemy = {
 
 };
 
-function getByPath(obj, path, def) {
+var getByPath = function(obj, path, def) {
 
     path = path
         .replace(/\[/g, '.')

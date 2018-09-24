@@ -27,7 +27,7 @@ console.log(_.get(enemy, 'targets[2]')); // 8
 // or like this
 console.log(_.get(enemy, 'targets.2')); // 8
 
-
+// vanilla js
 console.log(enemy.health.healRate.active); // false
 console.log(enemy['health']['healRate']['active']); // false
 
@@ -35,4 +35,4 @@ console.log(enemy['health']['healRate']['active']); // false
 console.log(_.get(enemy, 'health.healRate.overTime', {
    amount: 0,
    ticks: 0
-}));
+})); // {amount:0,ticks:0}

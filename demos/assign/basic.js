@@ -18,7 +18,7 @@ var methods = {
 }
 
 // assign everything to a new object
-var obj = _.assign({}, pos, deltas,methods);
+var obj = _.assign({}, pos, deltas, methods);
 
 obj.step();
 

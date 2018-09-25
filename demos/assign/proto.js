@@ -37,11 +37,3 @@ console.log(assigned.constructor.name); // Object
 // so then I would be calling undefined if I
 // called assign.tick
 //assigned.tick(); // TypeError: assigned.tick is not a function
-
-
-// EXTEND
-var extended = _.extend({},new Point(5,7,25,50));
-
-console.log(extended.constructor.name); // Object
-extended.tick();
-console.log(extended); // { x: 30, y: 57, dx: 25, dy: 50, tick: [Function] }

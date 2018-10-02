@@ -11,7 +11,7 @@ let methods = {
 
 };
 
-let obj = _.create(methods, {x: 5,y: 15});
+let obj = Object.create(methods, {x: {value:5,writable: true},y: {value:15,writable: true}});
 
 obj.move(5, 5);
 

@@ -1,5 +1,3 @@
-let _ = require('lodash');
-
 let obj = {
     x: 0,
     y: 0,
@@ -12,8 +10,8 @@ var step = function () {
     this.y += this.dy;
 };
 
-// create an obj.step with _.bind
-obj.step = _.bind(step, obj);
+// create an obj.step with Function.prototype.bind
+obj.step = step.bind(obj);
 
 // I can now call step, and this will refer to obj
 obj.step();

@@ -1,7 +1,6 @@
 let _ = require('lodash');
 
 let obj = {
-
     0: 'hi',
     1: 'how',
     2: 'are',

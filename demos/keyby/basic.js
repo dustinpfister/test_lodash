@@ -12,8 +12,13 @@ let units = [{
     }
 ];
 
-let obj = _.keyBy(units, function (unit) {
-        return unit.type;
+let counts = {
+    a: 0,
+    b: 0
+};
+let keyed = _.keyBy(units, function (unit) {
+        counts[unit.type] += 1;
+        return unit.type + counts[unit.type];
     });
 
-console.log(obj);
+console.log(keyed);

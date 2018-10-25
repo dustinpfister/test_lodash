@@ -3,17 +3,17 @@ let _ = require('lodash');
 let resp = [{
         'id': 'soups',
         'recipes': [{
-                'id': 4036
+                'id': 's1'
             }, {
-                'id': 4041
+                'id': 's2'
             }
         ]
     }, {
         'id': 'salads',
         'recipes': [{
-                'id': 4052
+                'id': 's1'
             }, {
-                'id': 4053
+                'id': 's2'
             }
         ]
     }
@@ -27,4 +27,4 @@ let keyed = _.chain(resp)
 })
 .value();
 
-console.log(keyed.soups.recipes['4036'])
+console.log(keyed)

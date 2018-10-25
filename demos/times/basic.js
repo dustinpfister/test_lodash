@@ -1,6 +1,7 @@
 let _ = require('lodash');
 
-_.times(4, function () {
+// call a method 4 times
+_.times(4, ()=> {
 
     console.log('foo'); // 'foo' (4x)
 

@@ -1,7 +1,7 @@
 let _ = require('lodash');
 
-// my own custom times
-var times = function (count, func) {
+// my own custom times method with a ccustom api
+let times = (count, func)=> {
     var i = 0,
     per,
     results = [];
@@ -11,6 +11,9 @@ var times = function (count, func) {
     // while i is less than len
     while (i < count) {
         per = i / count;
+
+        // call function with a custom api that can be
+        // used via the this keyword
         results.push(func.call({
                 i: i,
                 count: count,
@@ -23,7 +26,7 @@ var times = function (count, func) {
     return results;
 };
 
-var points = times(10, function () {
+let points = times(10, function () {
 
         var s = this;
 
@@ -47,4 +50,4 @@ console.log(points);
   { i: 7, x: 224, y: 156 },
   { i: 8, x: 256, y: 144 },
   { i: 9, x: 288, y: 132 } ]
-  */
+*/

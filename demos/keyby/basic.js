@@ -21,4 +21,4 @@ let keyed = _.keyBy(units, function (unit) {
         return unit.type + counts[unit.type];
     });
 
-console.log(keyed);
+console.log(keyed.a1.price); // 10

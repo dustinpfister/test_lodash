@@ -1,4 +1,4 @@
-
+let _ = require('lodash');
 
 var obj = {
 
@@ -20,4 +20,11 @@ Object.defineProperty(obj, 'hidden', {
 console.log(obj.hidden); // I count
 console.log(obj.visible); // I do not count
 
+// _.size or Object.keys(obj).length 
+// will only return enumerable lengths
+console.log(_.size(obj)); // 1
 console.log(Object.keys(obj).length); // 1
+
+// so there is Object.getOwnPropertyNames()
+console.log( Object.getOwnPropertyNames(obj).length ); // 2
+

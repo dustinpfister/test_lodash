@@ -5,9 +5,9 @@ let arr = _.chain([1, 2, 3, 4])
         return Math.pow(2, n);
     })
     .filter((n) => {
-        return n % 8 > 0;
+        return n % 8 === 0;
     })
     .reverse()
-    .value();
+    .sum();
 
-console.log(arr); // [ 4, 2 ]
+console.log(arr); // { Object }

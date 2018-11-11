@@ -1,8 +1,13 @@
 let _ = require('lodash');
 
 let arr = _([1, 2, 3, 4])
-    .map(function (n) {
+    .map((n) => {
         return Math.pow(2, n);
-    }).reverse();
+    })
+    .filter((n) => {
+        return n % 8 === 0;
+    })
+    .reverse()
+    .sum();
 
-console.log(arr.value()); // [ 16, 8, 4, 2 ]
+console.log(arr); // 24

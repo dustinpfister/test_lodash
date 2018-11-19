@@ -1,26 +1,25 @@
 let _ = require('lodash');
 
-var distance = function (x1, y1, x2, y2) {
+let distance = function (x1, y1, x2, y2) {
 
-    return Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2));
-
-};
-
-var forA = function (x1, x2) {
-
-    return Math.pow(x1 - x2, 2);
+    return Math.round(Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2)));
 
 };
 
-var dist = _.flow(
-        [
-            function (a, b) {
+console.log(distance(10, 15, 90, 22)); // 80
 
-                console.log(a,b);
 
-            }
-        ]);
+let forA = function (a1, a2) {
+    return Math.pow(a1 - a2, 2);
+};
+let dist = _.flow([
+   function (x1, y1, x2, y2) {
+       return forA(x1, x2) + forA(y1, y2)
+   },
+   Math.sqrt,
+   Math.round
+]);
 
-dist(10, 10)
+console.log(dist(10, 15, 90, 22)); // 80
 
 //var dist = _.flow()

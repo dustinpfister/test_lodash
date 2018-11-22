@@ -1,9 +1,7 @@
 let _ = require('lodash');
 
 let distance = function (x1, y1, x2, y2) {
-
     return Math.round(Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2)));
-
 };
 
 console.log(distance(10, 15, 90, 22)); // 80
@@ -21,5 +19,3 @@ let dist = _.flow([
 ]);
 
 console.log(dist(10, 15, 90, 22)); // 80
-
-//var dist = _.flow()

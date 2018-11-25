@@ -1,15 +1,13 @@
 let _ = require('lodash');
 
-let Ship = function (x, y) {
-    this.x = x;
-    this.y = y;
-};
+_.mixin({
 
-Ship.prototype.move = function (a, d) {
-    this.x += Math.cos(a) * d;
-    this.y += Math.sin(a) * d;
-};
+    foo: function () {
 
-var methods 
+        return 'bar';
 
-_.mixin(obj);
+    }
+
+});
+
+console.log(_.foo() );

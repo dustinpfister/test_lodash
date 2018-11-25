@@ -10,6 +10,9 @@ Ship.prototype.move = function (a, d) {
     this.y += Math.sin(a) * d;
 };
 
-var methods 
+var methods = {
+	
+	
+}
 
 _.mixin(obj);

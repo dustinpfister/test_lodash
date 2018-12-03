@@ -32,4 +32,5 @@ console.log(obj.dist(0, 0)); // 141.42...
 
 // set by angle and distance
 obj.setByAD(45, 100);
+
 console.log(_.round(obj.dist(0, 0))); // 100

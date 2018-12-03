@@ -10,4 +10,4 @@ _.mixin({
 
 });
 
-console.log(_.foo() );
+console.log(_.foo() ); // bar

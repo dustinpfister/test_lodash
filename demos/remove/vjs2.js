@@ -17,15 +17,13 @@ var enemies = [{
     }
 ],
 ei = 0;
-while (ei < enemies.length) {
 
+while (ei < enemies.length) {
     var enemy = enemies[ei];
     console.log(ei, enemy)
     if (enemy.hp <= 0) {
         enemies.splice(ei, 1);
     }
-
     ei += 1;
 }
-
 console.log(enemies);

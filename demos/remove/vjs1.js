@@ -1,4 +1,5 @@
 // so looping from zero upwards presents a problem
+// because the length of the array changes
 var arr = [-1, -2, 3, -4, 5],
 i = 0, len = arr.length;
 while (i < len) {
@@ -11,7 +12,7 @@ while (i < len) {
 
 console.log(arr); // [ -2, 3, 5 ]
 
-// looping backwards also works
+// looping backwards works
 var arr = [-1, -2, 3, -4, 5],
 i = arr.length;
 while (i--) {

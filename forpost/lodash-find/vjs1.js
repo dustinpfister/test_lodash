@@ -27,10 +27,26 @@ let people = [{
 
 // works with array of objects
 var mike = find(people, function (val, key) {
-    if (val.age === 24) {
-        return true;
-    }
-    return false;
-});
+        if (val.age === 24) {
+            return true;
+        }
+        return false;
+    });
 
 console.log(mike.age); // 24
+
+
+// Just an object
+let obj = {
+    foo: 'bar',
+    salty: true,
+    n: 42
+};
+
+var aNumber = find(obj, function (val, key) {
+        if (typeof val === 'number') {
+            return true;
+        }
+    });
+
+console.log(aNumber); // 42

@@ -1,12 +1,19 @@
-var col = [7, 8, 13, -5, 32, 2.5];
-
-var keys = Object.keys(col),
-i = keys.length,
-results = [];
-while (i--) {
-    var p = Math.log(col[keys[i]]) / Math.log(2);
-    if (p > 0 && String(p).indexOf('.') === -1) {
-        results.push(col[keys[i]]);
+var find = function (col, forEach) {
+    var keys = Object.keys(col),
+    i = keys.length,
+    results = [];
+    while (i--) {
+        if (forEach(col[keys[i]], keys[i])) {
+            results.push(col[keys[i]]);
+        }
     }
-}
-console.log(results); // [32,8]
+    return results;
+};
+
+var nums = [7, 8, 13, -5, 32, 2.5];
+var pow2 = find(nums, function (val, key) {
+    var p = Math.log(val) / Math.log(2);
+    return p > 0 && String(p).indexOf('.') === -1;
+});
+
+console.log(pow2); // [32,8]

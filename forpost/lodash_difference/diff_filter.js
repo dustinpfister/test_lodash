@@ -9,4 +9,8 @@ let result = _.filter(data, function (n) {
         });
     });
 
-console.log(result);
+console.log(result); // [2,6,9]
+
+let result_diff = _.difference(data,kill);
+
+console.log(result_diff); // [2,6,9]

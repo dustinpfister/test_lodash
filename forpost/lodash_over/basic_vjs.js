@@ -2,7 +2,7 @@ let over = function (funcs) {
     return function () {
         let result = [];
         funcs.forEach((func) => {
-            result.push(func.apply(null, Array.from(arguments)));
+            result.push(func.apply(null, arguments));
         });
         return result;
     }

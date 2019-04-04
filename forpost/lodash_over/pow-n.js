@@ -16,3 +16,4 @@ let powN = function (n) {
 let pow2n4 = _.over([powN(2),powN(3)]);
 
 console.log(pow2n4(2, 4));
+// [ [ 4, 16 ], [ 9, 81 ] ] 

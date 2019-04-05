@@ -1,7 +1,5 @@
 let _ = require('lodash');
 
-let strP = '<p>this is an element</p>';
+let str = _.replace('Hello Mr Early Cuyler','Early Cuyler','Dan Halen');
 
-let strS = _.replace(strP,'p>','span>');
-
-console.log(strS);
+console.log(str); // Hello Mr Dan Halen

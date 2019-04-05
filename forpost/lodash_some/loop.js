@@ -9,4 +9,4 @@ while (i--) {
     }
 }
 
-console.log(some);
+console.log(some); // true

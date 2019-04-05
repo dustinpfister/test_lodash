@@ -1,9 +1,9 @@
 let _ = require('lodash');
 
-comp = _.template('all passed: <%- _.every(tests) %>'),
+comp = _.template('<% _.forEach(cans,function(can){ %><span><%- can %><\/span><br><%});%>'),
 
-tests1 = comp({tests:[true,true,true]}),
-tests2 = comp({tests:[true,false,true]});
-
-console.log(tests1);
-console.log(tests2);
+html = comp({
+        cans: ['beens', 'peas', 'carrots']
+    });
+	
+console.log(html);

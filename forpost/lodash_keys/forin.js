@@ -1,5 +1,3 @@
-let _ = require('lodash');
-
 let obj = {
     foo: 'bar',
     n: 42
@@ -27,4 +25,4 @@ Object.keys = Object.keys || function (obj) {
     return keyNames;
 };
 
-console.log( Object.keys(obj) );
+console.log( Object.keys(obj) ); // ['foo', 'n']

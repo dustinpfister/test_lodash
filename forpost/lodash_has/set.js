@@ -15,17 +15,17 @@ let checkPoint = (pt) => {
         _.set(pt, 'y', 0);
     }
 
-	['x','y'].forEach((key)=>{
-		
-	let path = 'deltas';
-		if(!_.has(pt,path+'.' + key)){
-			
-			_.set(pt,)
-			
-		}
-		
-	})
-	
+    ['x', 'y'].forEach((key) => {
+
+        let path = 'deltas';
+        if (!_.has(pt, path + '.' + key)) {
+
+            _.set(pt, )
+
+        }
+
+    })
+
     return pt;
 };
 

@@ -1,10 +1,8 @@
 let _ = require('lodash');
-
 let inRange = function(){
     return this.x < 9 && this.x >=0 
 }
-
-var points = [
+let points = [
     { pt: { x: -1, tester: inRange } },
     { pt: { x: 5, tester: inRange} },
     { pt: { x: 3, tester: inRange} },

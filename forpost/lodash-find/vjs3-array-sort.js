@@ -1,44 +1,47 @@
-var arr = [
-  { name: 'dusty', sex: 'M', online: true},
-  { name: 'fran', sex: 'F', online: true},
-  { name: 'dustin', sex: 'M', online: false},
-  { name: 'duster', sex: 'M', online: false},
-  { name: 'dister', sex: 'M', online: false},
-  { name: 'dana', sex: 'F', online: true},
-  { name: 'dan', sex: 'M', online: false}
+let arr = [{
+        text: 'In this post I will be writing about something else compleatly'
+    }, {
+        text: 'This is on lodash find and other topics related to lodash find'
+    }, {
+        text: 'Sorry not what you want to find here'
+    }, {
+        text: 'This is on lodash but not what you are looking for so you must find it elseware'
+    },
 ];
 
-
-var strToCodeArray = (str)=>{
-  return str.name.split('').map((c)=>{ return c.charCodeAt(0)});
+let getScore = (str) => {
+    let term = 'lodash find';
+    let full = str.match(new RegExp(term, 'g'));
+    full = full === null ? 0 : full.length;
+    let words = str.split(' ');
+    words = words.map((w) => {
+            let tw = term.split(' '),
+            i = tw.length;
+            while (i--) {
+                if (tw[i] === w) {
+                    return true;
+                }
+            }
+            return false;
+        }).reduce((a, b) => {
+            return a + b;
+        })
+        return full + words;
 };
 
-var getScore = (str)=>{
-  return strToCodeArray(str).reduce((a,b)=>{return a + b;});
-}
-
-arr.sort((a,b)=>{
-	//console.log(getScore(a));
-	
-	//if(getScore(a) > getScore(b)){
-	//	return -1;
-	//}
-	
-	//if(getScore(a) < getScore(b)){
-	//	return 1;
-	//}
-	//return 0;
-	
-	
-	if(a > b){
-		return -1;
-	}
-	
-	if(a <b){
-		return 1;
-	}
-	return 0;
-	
+arr.forEach((a) => {
+    console.log(typeof getScore(a.text));
 });
 
-console.log(arr.slice(0,3));
+arr = arr.sort((a, b) => {
+
+        if (getScore(a.text) > getScore(b.text)) {
+            return -1;
+        }
+        if (getScore(a.text) < getScore(b.text)) {
+            return 1;
+        }
+        return 0;
+    });
+
+console.log(arr);

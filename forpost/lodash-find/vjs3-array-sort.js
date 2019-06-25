@@ -9,36 +9,34 @@ let arr = [{
     },
 ];
 
-let getScore = (str) => {
-    let term = 'lodash find';
-    let full = str.match(new RegExp(term, 'g'));
-    full = full === null ? 0 : full.length;
+let getWordScore = (str, term) => {
     let words = str.split(' ');
-    words = words.map((w) => {
-            let tw = term.split(' '),
-            i = tw.length;
-            while (i--) {
-                if (tw[i] === w) {
-                    return true;
-                }
+    return words.map((w) => {
+        let tw = term.split(' '),
+        i = tw.length;
+        while (i--) {
+            if (tw[i] === w) {
+                return true;
             }
-            return false;
-        }).reduce((a, b) => {
-            return a + b;
-        })
-        return full + words;
+        }
+        return false;
+    }).reduce((a, b) => {
+        return a + b;
+    });
 };
 
-arr.forEach((a) => {
-    console.log(typeof getScore(a.text));
-});
+let getScore = (str,term) => {
+    let full = str.match(new RegExp(term, 'g'));
+    full = full === null ? 0 : full.length;
+    return full + getWordScore(str, term);
+};
 
+let term = 'lodash find';
 arr = arr.sort((a, b) => {
-
-        if (getScore(a.text) > getScore(b.text)) {
+        if (getScore(a.text, term) > getScore(b.text, term)) {
             return -1;
         }
-        if (getScore(a.text) < getScore(b.text)) {
+        if (getScore(a.text, term) < getScore(b.text, term)) {
             return 1;
         }
         return 0;

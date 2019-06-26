@@ -1,5 +1,4 @@
 let findIndexes = (opt) => {
-
     opt = opt || {};
     opt.arr = opt.arr || [];
     opt.term = opt.term || '';
@@ -10,20 +9,17 @@ let findIndexes = (opt) => {
         return false;
     };
     opt.reverse = opt.reverse || false;
-
-    let len = opt.arr.length;
-    let i = opt.reverse ? len : 0;
-    let indexes = [];
+    let len = opt.arr.length,
+    i = opt.reverse ? len : 0,
+    indexes = [];
     while (opt.reverse ? i-- : i < len) {
-
-        console.log(i);
-
+        if (opt.lookFor(opt.arr[i], opt.term)) {
+            indexes.push(i);
+        }
         if (!opt.reverse) {
             i += 1;
         }
-
     }
-
     return indexes;
 };
 
@@ -32,5 +28,7 @@ let indexes = findIndexes({
         term: 'two'
     });
 
+// first from the left
+console.log(indexes[0]); // 2
 // all of them
 console.log(indexes); // [2,4]

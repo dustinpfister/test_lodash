@@ -1,6 +1,6 @@
 let findIndexes = (arr, term) => {
     let indexes = [];
-    Object.values(arr).forEach((el, i) => {
+    arr.forEach((el, i) => {
         if (el === term) {
             indexes.push(i);
         }

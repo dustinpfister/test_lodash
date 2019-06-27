@@ -1,4 +1,4 @@
-let lodash = require('lodash');
+let _ = require('lodash');
 let arr = [1,2,3,4,5,6],
 newArr = _.drop(arr,3);
 // the new Array is what remains

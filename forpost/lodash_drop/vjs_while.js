@@ -1,7 +1,7 @@
 let drop = (arr, count) => {
     let newArr = [],
     len = arr.length,
-    i = count = count === undefined ? 1 : count;
+    i = count === undefined ? 1 : count;
     while (i < len) {
         newArr.push(arr[i]);
         i += 1;

@@ -4,11 +4,16 @@ let times = (count, func) => {
         func();
     }
 };
-let arr = [1, 2, 3],
-str = '';
-times(3, () => {
-    str += arr.join(',') + ',';
-});
-let arr2 = str.split(',');
-arr2.pop();
-console.log(arr2);
+
+let repeatArray = (arr, count) => {
+    let str = '',
+    arr2;
+    times(3, () => {
+        str += arr.join(',') + ',';
+    });
+    arr2 = str.split(',');
+    arr2.pop();
+    return arr2;
+};
+
+console.log( repeatArray([1,2,3], 3));

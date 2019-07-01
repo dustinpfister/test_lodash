@@ -8,5 +8,5 @@ last = _.remove(arr, (el,i)=>{
 // for getting the last element. However it will
 // also mutate the array, and is a complex 
 // solution for a fairly simple task
-console.log(last); // 4
+console.log(last[0]); // 4
 console.log(arr); // [1,2,3,4]

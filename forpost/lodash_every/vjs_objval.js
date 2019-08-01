@@ -27,7 +27,7 @@ obj2 = {
 tester = (el) => {
     return typeof el === 'number';
 };
-
+// works as exspected
 console.log( every(arr1, tester) ); // true
 console.log( every(arr2, tester) ); // false
 console.log( every(obj1, tester) ); // true

@@ -1,6 +1,3 @@
-
-// An every method could be written like this
-// with Object.values
 var every = function (obj, forEach) {
     for (var prop in obj) {
         if (!forEach(obj[prop])) {

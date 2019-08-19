@@ -19,4 +19,11 @@ let pairs = _.map(obj, (prop, key) => {
 
 console.log(pairs);
 // [ false, [ 'x', 5 ], [ 'y', 12 ], false ]
+
+pairs = _.remove(pairs);
+console.log(pairs);
+// [ [ 'x', 5 ], [ 'y', 12 ] ]
+
+let newObj = _.fromPairs(pairs);
+console.log(newObj);
 // { x: 5, y: 12 }

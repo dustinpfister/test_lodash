@@ -1,7 +1,9 @@
 let _ = require('lodash');
 
-let obj = {},
-obj2 = {x:42};
+// Is empty can be used with Object Collections
+console.log( _.isEmpty({}) ); // true
+console.log( _.isEmpty({x:42}) ); // false
 
-console.log( _.isEmpty(obj) ); // true
-console.log( _.isEmpty(obj2) ); // false
+// and Array Object Collections
+console.log( _.isEmpty([]) ); // true
+console.log( _.isEmpty([12,42,87]) ); // false

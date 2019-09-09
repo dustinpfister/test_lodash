@@ -1,5 +1,3 @@
-let _ = require('lodash');
-
 let once = (func) => {
     let calls = 1;
     return function(){
@@ -15,4 +13,4 @@ let trap = once((mess) => {
     });
 
 trap('okay'); // 'okay' logged to the console
-trap('nope'); //
+trap('nope'); // (nothing)

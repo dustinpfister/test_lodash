@@ -1,5 +1,3 @@
-let _ = require('lodash');
-
 // my own custom times method with a ccustom api
 let times = (count, func)=> {
     var i = 0,

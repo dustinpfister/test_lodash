@@ -5,7 +5,6 @@ var matrix = [
     [1,0,0,1],
     [2,1,1,3]
 ];
- 
 var x = 2, y = 1,
 // I can get a single element like this
 el = matrix[y][x];

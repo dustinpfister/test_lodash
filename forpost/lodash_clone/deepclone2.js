@@ -10,8 +10,8 @@ let obj = {
     n: 42
 };
 
-// using clone to clone the object
-let a = _.clone(obj);
+// using cloneDeep to clone the object
+let a = _.cloneDeep(obj);
 
 // changing a value of the nested object
 a.point.x = 0;
@@ -21,5 +21,5 @@ a.point.y = 0;
 // as well as the original because the
 // nested object is still referenced rather than
 // copied
-console.log(obj.point.x, obj.point.y); // 0 0
+console.log(obj.point.x, obj.point.y); // 54 127
 console.log(a.point.x, a.point.y); // 0 0

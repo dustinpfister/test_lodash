@@ -11,14 +11,14 @@ var throttle = function (func, rate) {
         }
     };
 };
-
+// using it to make a function
+// throttled at one sec
 var sec = throttle(function () {
         console.log('one sec');
     }, 1000);
-
+// using it in a loop
 var loop = function () {
     setTimeout(loop, 33);
     sec();
 };
-
 loop();

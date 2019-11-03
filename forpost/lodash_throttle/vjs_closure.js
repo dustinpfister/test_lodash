@@ -1,8 +1,9 @@
+// the outer method
 var throttle = function (func, rate) {
     var lastTime = new Date();
     func = func || function () {};
     rate = rate || 1000;
-    // define the api
+    // the inner method
     return function () {
         var now = new Date();
         if (now - lastTime >= rate) {

@@ -10,3 +10,4 @@ let color = {
 let cArr = _.at(color, ['r','g','b', 'a']);
 
 console.log(cArr);
+// [ 128, 64, 0, 255 ]

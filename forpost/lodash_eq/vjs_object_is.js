@@ -6,3 +6,7 @@ Object.is = Object.is || function (x, y) {
         return x !== x && y !== y;
     }
 };
+
+console.log( 0 == -0 ); // true
+console.log( 0 === -0 ); // true
+console.log( Object.is(0 , -0) ); // false

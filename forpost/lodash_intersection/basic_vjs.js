@@ -9,6 +9,9 @@ let intersectTwo = (a, b) => {
     });
 };
 
+console.log( intersectTwo(arr1, arr2) );
+// [1,NaN]
+
 let intersection = function () {
 
     let r = [];
@@ -26,4 +29,4 @@ let intersection = function () {
 
 };
 
-console.log(intersection(arr1, arr2, arr3));
+// console.log(intersection(arr1, arr2, arr3));

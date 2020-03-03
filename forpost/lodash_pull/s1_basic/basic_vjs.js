@@ -18,7 +18,7 @@ var pull = function (arr) {
 };
 
 
-var arr = [-1, 5, 7, -1, -1, 8, 7];
-arr = pull(arr, -1);
+var arr = [-1, 5, 7, NaN, -1, -1, 8, 7];
+arr = pull(arr, -1, NaN);
 
 console.log(arr.join(':'));

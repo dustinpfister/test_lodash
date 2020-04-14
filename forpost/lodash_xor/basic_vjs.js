@@ -1,4 +1,4 @@
-
+// arrayIncludes
 function arrayIncludes(array, value) {
   const length = array == null ? 0 : array.length
   return !!length && baseIndexOf(array, value, 0) > -1
@@ -58,6 +58,7 @@ function baseUniq(array, iteratee, comparator) {
   return result
 }
 
+// isFlattenable
 function isFlattenable(value) {
   return Array.isArray(value) || isArguments(value) ||
     !!(value && value[spreadableSymbol])
@@ -153,6 +154,5 @@ function baseXor(arrays, iteratee, comparator) {
 }
 
 let a = baseXor([[0, 1], [1, 2]]);
-
 console.log(a);
 // [0,2]

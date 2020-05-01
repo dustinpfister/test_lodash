@@ -1,5 +1,3 @@
-let _ = require('lodash');
-
 let arr = [
     [7, 56, 3, 3, 0, 12],
     [6, 5, 4],
@@ -16,7 +14,9 @@ let sorter = function (a, b) {
     return 0;
 };
 
-let r = _.invokeMap(arr, 'sort', sorter);
+let r = arr.map(function (nums) {
+        return nums.sort(sorter);
+    });
 
 console.log(r);
 // [ [ 0, 3, 3, 7, 12, 56 ], [ 4, 5, 6 ], [ 1, 5, 5, 5 ] ]

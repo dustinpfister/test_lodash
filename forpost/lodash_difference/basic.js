@@ -1,7 +1,7 @@
 let _ = require('lodash');
 
-let data = ['foo', 'bar', 'baz']
+let data1 = ['foo', 'bar', 'baz'],
+data2 = ['foo', 'man', 'chew'];
 
-let noGood = _.difference(['foo', 'man', 'chew'], data);
-
-console.log(noGood); // ['man', 'chew']
+console.log( _.difference(data1, data2) ); // [ 'bar', 'baz' ]
+console.log( _.difference(data2, data1) ); // ['man', 'chew']

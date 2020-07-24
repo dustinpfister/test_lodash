@@ -1,6 +1,7 @@
 let items = {
     apple: {cost: 2},
     raspberry: {cost: 5},
+    fooberry: null,
     blackberry: {cost: 4}
 };
 let hasCost = (item) => {
@@ -12,22 +13,9 @@ let hasCost = (item) => {
     }
     return false;
 };
-// does not seem to work as expected with my items
-// object
-console.log([].every.call(items, hasCost)); // true
-items.fooberry = null;
+// call will not work with this kind of object becuase they are named
+// key values
 console.log([].every.call(items, hasCost)); // true
 
-let arrLike = {
-    0 : 7,
-    1 : 8,
-    2 : 'nope',
-    length: 3
-},
-tester = (el) => {
-    return typeof el === 'number';
-};
 
-console.log([].every.call(arrLike, tester)); // false
-arrLike[2] = 9;
-console.log([].every.call(arrLike, tester)); // true
+console.log(Object.values(items).every(hasCost)); // true

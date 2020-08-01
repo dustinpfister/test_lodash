@@ -1,6 +1,6 @@
-Number.isInteger = Number.isInteger || function(value) {
-  return typeof value === 'number' && 
-    isFinite(value) && 
+Number.isInteger = Number.isInteger || function (value) {
+    return typeof value === 'number' &&
+    isFinite(value) &&
     Math.floor(value) === value;
 };
 
@@ -9,6 +9,10 @@ let isArrayLike = function (a) {
     if (typeof a != 'object' || a === null) {
         return false;
     }
+    // is the object a function?
+    //if (a.constructor.name === 'Function') {
+    //    return false;
+    //}
     // does it have a length property
     if (a.length === undefined) {
         return false;
@@ -27,9 +31,9 @@ let isArrayLike = function (a) {
 };
 
 let obj = {
-    0: 1,
-    1: 2,
-    2: 3,
+    //0: 1,
+    //1: 2,
+    //2: 3,
     length: 3
 };
 

@@ -9,14 +9,6 @@ let isArrayLike = function (a) {
     if (typeof a != 'object' || a === null) {
         return false;
     }
-    // is the object a function?
-    //if (a.constructor.name === 'Function') {
-    //    return false;
-    //}
-    // does it have a length property
-    if (a.length === undefined) {
-        return false;
-    }
     // is length a number? is it an Integer?
     // is it greater than 0 and less then or equal to MAX_SAFE_INTEGER
     if (typeof a.length === 'number') {

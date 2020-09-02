@@ -1,6 +1,11 @@
-let arr = [1,2,3,4,5,6],
-first = arr.shift();
-// shift returns the first element in the array
-console.log(first); // 1
-// shift also modifies the array, 
-console.log(arr); // [2,3,4,5,6]
+
+let s = new Set(),
+arr = [];
+[[1, 2, 3], [6], [3, 2, 4, 1], [5, 4]].forEach(function (arr) {
+    arr.forEach(function (n) {
+        s.add(n);
+    });
+});
+
+console.log(s);
+// Set { 1, 2, 3, 6, 4, 5 }

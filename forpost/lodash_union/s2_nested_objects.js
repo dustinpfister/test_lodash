@@ -12,7 +12,7 @@ b = [[{
         },
         obj
     ]
-]
+];
 
 let arr = _.union(a, b);
 

@@ -3,17 +3,15 @@ var dispObj1 = {
     x: 10,
     y: 45,
     hp: {
-        current: 10,
-        max: 100
+        current: 10
     }
 };
 
 var dispObj2 = {
     x: 10,
-    y: 45, ,
+    y: 45,
     hp: {
-        current: 10,
-        max: 100
+        current: 10
     },
     features: {
         autoHeal: {
@@ -31,3 +29,8 @@ var applyAutoHeal = function (dispObj) {
         }
     }
 };
+
+applyAutoHeal(dispObj1);
+applyAutoHeal(dispObj2);
+
+console.log(dispObj1.hp.current, dispObj2.hp.current); // 10 20

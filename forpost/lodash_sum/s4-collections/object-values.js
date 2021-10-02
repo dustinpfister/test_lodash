@@ -5,9 +5,8 @@ let obj = {
     y: 10,
     z: 5
 };
-// object keys and reduce
-var sum = Object.keys(obj).reduce((acc, key) => {
-    var n = obj[key];
+// object values and reduce
+var sum = Object.values(obj).reduce((acc, n) => {
     return acc + n;
 }, 0);
 console.log(sum); // 57

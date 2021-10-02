@@ -1,6 +1,7 @@
 # lodash_sum todo list
 
 ### () - new section of array of arrays
+* have an array of arrays example
 
 ### ( done 10/02/2021 ) - new section on objects in general
 * (done) have an example that uses Object.keys for an object with named properties

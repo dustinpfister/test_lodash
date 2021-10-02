@@ -1,9 +1,12 @@
 # lodash_sum todo list
 
-### () - new section of array of arrays
-* (done) have a flatten sum example
-* have a flatten deep example
+### () - more examples on arrays of arrays
 * have a flatten depth example
+* have at least one vjs example
+
+### () - start new section of array of arrays
+* (done) have a flatten sum example
+* (done) have a flatten deep example
 
 ### ( done 10/02/2021 ) - new section on objects in general
 * (done) have an example that uses Object.keys for an object with named properties

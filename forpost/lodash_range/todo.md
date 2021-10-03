@@ -1,5 +1,8 @@
 # lodash_range todo list
 
+## () - start examples section
+* random range example
+
 ## ( done 10/03/2021 ) new s4 section of lodash range right method
 * (done) basic example of range right
 * (done) at least one more example using an other lodash means to reverse order

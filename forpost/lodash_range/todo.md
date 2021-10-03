@@ -4,8 +4,8 @@
 * basic example of range right
 * at least one more example using an other lodash means to reverse order
 
-## () - more s3 vjs section examples
-* native array map example
+## ( done 10/03/2021 ) - more s3 vjs section examples
+* (done) native array map example
 
 ## ( done 10/03/2021 ) - more s2 lodash section examples
 * (done) have a range_basic example based off of the first example in basic

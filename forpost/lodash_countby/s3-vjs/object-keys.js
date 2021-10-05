@@ -1,4 +1,13 @@
-let _ = require('lodash');
+var countBy = (obj, func) => {
+    var counts = {};
+    var arr = Object.keys(obj);
+    arr.forEach((sourceKey, i, arr) => {
+        var el = obj[sourceKey];
+        var key = func.call(obj, el, sourceKey, obj);
+        counts[key] = counts[key] === undefined ? 1 : counts[key] += 1;
+    });
+    return counts;
+};
 
 let arr = [{
         username: 'john',
@@ -12,8 +21,6 @@ let arr = [{
     }
 ];
 
-let obj = _.countBy(arr, (rec) => {
-        return rec.score >= 65 ? 'pass': 'fail';
-    });
-console.log(obj);
-// { fail: 2, pass: 1 }
+console.log(countBy(arr, function (el) {
+        return el.score >= 65 ? 'pass' : 'fail';
+    }));

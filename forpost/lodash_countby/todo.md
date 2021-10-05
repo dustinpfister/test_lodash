@@ -1,6 +1,7 @@
 # lodash_countby todo list
 
 ## () - new vjs section
+* (done) basic example using array.forEach
 * have an example that does the same thing using Object.keys and array.forEach
 
 ## ( done 10/05/2021 ) - new basic examples

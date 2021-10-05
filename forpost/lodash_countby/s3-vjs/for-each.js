@@ -1,5 +1,3 @@
-let _ = require('lodash');
-
 let arr = [{
         username: 'john',
         score: 37

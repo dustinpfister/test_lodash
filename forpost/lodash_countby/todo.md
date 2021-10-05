@@ -1,9 +1,9 @@
 # lodash_countby todo list
 
-## () new section on keyby and group by lodash methods
-* start a keyby example
-* start a groupby example
-* have an example that uses countby, keyby, and groupby
+## ( done 10/05/2021 ) new section on keyby and group by lodash methods
+* (done) start a keyby example
+* (done) start a groupby example
+* (done) have an example that uses countby, keyby, and groupby
 
 ## ( done 10/05/2021 ) - new vjs section
 * (done) basic example using array.forEach

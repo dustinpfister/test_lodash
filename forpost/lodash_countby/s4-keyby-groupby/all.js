@@ -1,4 +1,3 @@
-
 let _ = require('lodash');
 
 let arr = [
@@ -11,9 +10,8 @@ let func = (rec) => {
     return rec.score >= 65 ? 'pass' : 'fail';
 };
 
-let keyed = _.groupBy(arr, func);
-console.log(keyed);
-/*
-{ fail: [{ username: 'john', score: 37},{ username: 'bill', score: 20 }],
-  pass: [{ username: 'jake', score: 67 }] }
-*/
+console.log( _.keyBy(arr, func) );
+console.log( _.groupBy(arr, func) );
+console.log( _.countBy(arr, func) );
+
+

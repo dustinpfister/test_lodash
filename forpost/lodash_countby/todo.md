@@ -1,6 +1,8 @@
 # lodash_countby todo list
 
-## () - new basic examples
+## ( done 10/05/2021 ) - new basic examples
+* (done) new property example
+* 
 
 ## () - new use case example
 * have a new use case example that involves adding up a score for an array of items

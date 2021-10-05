@@ -5,8 +5,7 @@ let arr = [{
         score: 37
     }, {
         username: 'jake',
-        score: 50
-
+        score: 67
     }, {
         username: 'bill',
         score: 20
@@ -14,10 +13,7 @@ let arr = [{
 ];
 
 let obj = _.countBy(arr, (rec) => {
-        return rec.score >= 50;
+        return rec.score >= 65 ? 'pass': 'fail';
     });
-
-console.log(obj.false); // 2
-console.log(obj.true); // 1
-console.log(_.countBy(['foo', 'man', 'chew','happy','bar'], 'length'));
- // {3: 3, 4: 1, 5: 1}
+console.log(obj);
+// { fail: 2, pass: 1 }

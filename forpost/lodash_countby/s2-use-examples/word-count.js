@@ -1,9 +1,8 @@
 let _ = require('lodash');
 
-console.log(_.countBy(['foo', 'man', 'chew','happy','bar'], 'length'));
- // {3: 3, 4: 1, 5: 1}
- 
- console.log(_.countBy(['foo', 'man', 'chew','happy','bar'], function(str){
-    return str.length;
-}));
- // {3: 3, 4: 1, 5: 1}
+let words = 'chew foo man foo chew foo foo'.split(' ');
+let obj = _.countBy(words, (word) => {
+        return word;
+    });
+console.log(obj);
+//{ chew: 2, foo: 4, man: 1 }

@@ -1,5 +1,8 @@
 # lodash_includes todo list
 
+### () - lodash includes an nested objects section
+* start a new section on lodash includes and nested objects
+
 ### ( done 10/08/2021 ) - more vjs examples
 * (done) have a vjs example that will work with any object
 * (done) have a vjs example that will work with strings by way of indexOf

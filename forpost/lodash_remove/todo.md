@@ -7,4 +7,4 @@
 * start a new section on removing object keys in general as the lodash remove method is NOT a collection method
 
 ## () - new s4-vjs examples
-* have a a vjs-remove.js file that is a vjs remove method using native javaScript methods
+* (done) have a a vjs-remove.js file that is a vjs remove method using native javaScript methods

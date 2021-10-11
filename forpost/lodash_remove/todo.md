@@ -1,5 +1,9 @@
 # lodash_remove todo
 
+## () - new s4-vjs examples
+* an extract method that will pull an array of arrays where each nested array is one or more elements from a source array that meet a condition given by way of a function using slice.
+* an example using the delete keyword
+
 ## () - have a section on NOT monkey patching
 * this came up for 'javascript removing elements from array' in google on 10/11/21
 ```

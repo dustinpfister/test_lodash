@@ -21,8 +21,8 @@
 * have at least one example of pull
 * have at least one example of without
 
-## () - new s1 basic example
-* have a basic example on the return value of \_.remove
+## ( done 10/11/2021 ) - new s1 basic example
+* (done) have a basic example on the return value of \_.remove
 
 ## ( done 10/11/2021 ) - new s4-vjs examples
 * (done) have a a vjs-remove.js file that is a vjs remove method using native javaScript methods

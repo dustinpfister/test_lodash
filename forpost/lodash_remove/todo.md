@@ -8,3 +8,5 @@
 
 ## () - new s4-vjs examples
 * (done) have a a vjs-remove.js file that is a vjs remove method using native javaScript methods
+* have a slice concat example
+* have a vjs-pull.js by value method example

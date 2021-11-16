@@ -1,3 +1,4 @@
+// creating a function
 let part = (source, condition) => {
     i = source.length,
     parts = [[], []],
@@ -9,7 +10,7 @@ let part = (source, condition) => {
     }
     return parts;
 };
-
+// demo
 let source = [8, null, 32, 'foo', NaN, 'bar', false, {}, 64, 128]; // source array
 let b = part(source, (el) => {
         return typeof el === 'number' && !Number.isNaN(el);

@@ -1,17 +1,23 @@
 // creating a function
 let part = (source, condition) => {
-    i = source.length,
+    let values = source instanceof Array ? source : Object.values(source),
+    keys = Object.keys(source),
+    i = values.length,
     parts = [[], []];
     condition = condition || function (el) {};
     while (i--) {
-        let el = source[i],
-        pi = condition(el) ? 0 : 1;
+        let el = values[i],
+        pi = condition(el, keys[i], source) ? 0 : 1;
         parts[pi].unshift(el);
     }
     return parts;
 };
 // demo
-let source = [8, null, 32, 'foo', NaN, 'bar', false, {}, 64, 128]; // source array
+let source = {
+    foo: 42,
+    bar: 'baz',
+    taz: false
+};
 let b = part(source, (el) => {
         return typeof el === 'number' && !Number.isNaN(el);
     });

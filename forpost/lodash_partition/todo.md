@@ -6,5 +6,5 @@
 
 ### () - expand av-vjs section
 * (done) rename basic vjs to 1-top-code
-* 2-part-func example that is a function
+* (done) 2-part-func example that is a function
 * 3-col example that will work with objects in general

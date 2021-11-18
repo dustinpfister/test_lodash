@@ -5,9 +5,10 @@
 * have at least one vjs example
 * have an example where the end node is an object rather than a number
 
-### () - new basics section
-* very simple while loop example
-* simple lodash sum example
+### ( done 11/18/2021 ) - new basics section
+* (done) very simple while loop example
+* (done) simple lodash sum example
+* (done) types example
 
 ### ( done 10/02/2021 ) - start new section of array of arrays
 * (done) have a flatten sum example

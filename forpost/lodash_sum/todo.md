@@ -3,8 +3,13 @@
 ### () - more examples on arrays of arrays
 * have a flatten depth example
 * have at least one vjs example
+* have an example where the end node is an object rather than a number
 
-### () - start new section of array of arrays
+### () - new basics section
+* very simple while loop example
+* simple lodash sum example
+
+### ( done 10/02/2021 ) - start new section of array of arrays
 * (done) have a flatten sum example
 * (done) have a flatten deep example
 

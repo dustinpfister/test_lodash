@@ -1,5 +1,5 @@
 # lodash\_some
 
-### () - expand basics section
-* new object example
-* new example comparing some to every
+### ( done 11/23/2021 ) - expand basics section
+* (done) new object example
+* (done) new example comparing some to every

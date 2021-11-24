@@ -10,3 +10,5 @@ var compact = function (a) {
 
 var arr = [null, 1, 'foo', NaN, false, 'bar', undefined, undefined, 42];
 console.log(compact(arr)); // [ 1, 'foo', 'bar', 42 ]
+// splice will also mutate in place though
+console.log(arr);  // [ 1, 'foo', 'bar', 42 ]

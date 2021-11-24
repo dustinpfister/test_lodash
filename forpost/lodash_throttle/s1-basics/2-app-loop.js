@@ -4,19 +4,25 @@ let _ = require('lodash');
 var sm = {
     currentState: 'init',
     states: {},
-    lt: new Date()
+    lt: new Date(),
+    game: {}
 };
 // init state
 sm.states.init = {
     update: function (sm, secs) {
         console.log('starting app');
+        sm.game = {
+            money: 1000,
+            moneyPerSec: 32
+        };
         sm.currentState = 'game';
     }
 };
 // game state
 sm.states.game = {
     update: function (sm, secs) {
-        console.log('game update ' + secs);
+        sm.game.money += sm.game.moneyPerSec * secs;
+        console.log('game update, money: ' + sm.game.money.toFixed(2));
     }
 };
 // update method created with lodash throttle

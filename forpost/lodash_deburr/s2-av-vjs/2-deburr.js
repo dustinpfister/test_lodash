@@ -70,4 +70,4 @@ const deburrLetter = basePropertyOf(deburredLetters)
 
 let str = 'Jalapeño';
 str = str.replace(reLatin, deburrLetter);
-console.log(str); // Jalape*o
+console.log(str); // Jalapeno

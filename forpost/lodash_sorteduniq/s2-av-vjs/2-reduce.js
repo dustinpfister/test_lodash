@@ -8,7 +8,7 @@ let sortedUniq = (arr) => {
             acc.push(el);
         }
         return acc;
-    }, []);
+    }, []).sort();
 };
 
 let a = [1, 1, 2, 2, 3, 3, 4, 4, 4, 4],

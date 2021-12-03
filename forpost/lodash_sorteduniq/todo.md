@@ -3,5 +3,5 @@
 ### () - expand s1-lodash
 * lodash unig example
 
-### () - expand s2-av-vjs
-* 2-reduce example
+### ( done 12/03/2021 ) - expand s2-av-vjs
+* (done) 2-reduce example

@@ -6,13 +6,7 @@ let obj = {
 };
 
 // There is the lodash _.keys that can be used 
-// to get object key names as well
+// to get object key names
 console.log(_.keys(obj)); // ['foo', 'n']
-
-// there is also the native Object.values
-// that does the same thing
-console.log( Object.values(obj) ); // [ 'bar', 42 ]
-console.log(Object.keys(obj)); // ['foo', 'n']
-
 
 

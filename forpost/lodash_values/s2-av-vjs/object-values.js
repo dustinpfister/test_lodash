@@ -1,5 +1,3 @@
-let _ = require('lodash');
-
 let obj = {
     foo: 'bar',
     n: 42

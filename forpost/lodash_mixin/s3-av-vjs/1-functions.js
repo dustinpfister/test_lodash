@@ -2,7 +2,9 @@
 var mixin = function (obj, source) {
     Object.keys(source).forEach(function (key) {
         var value = source[key];
+        // if source value is a function
         if (typeof value === 'function') {
+            // assign to source object
             obj[key] = value;
         }
     });

@@ -3,6 +3,6 @@ let _ = require('lodash');
 var check = _.debounce(() => {
     console.log('checking something...');
     check();
-},60000);
+}, 1000 * 3);
 check();
 check.flush(); // check now

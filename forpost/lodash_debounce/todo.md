@@ -4,8 +4,8 @@
 * 4-clear-time-out
 * 5-fps
 
-### () - new av-client-side
-* 1-request-animation-frame
+### ( done 12/07/2021 ) - new av-client-side
+* (done) 1-request-animation-frame
 
 ### ( done 12/07/2021 ) - new av-nodejs
 * (done) 1-argv example using process.argv to set count and delay

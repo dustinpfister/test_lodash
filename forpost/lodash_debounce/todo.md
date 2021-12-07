@@ -1,15 +1,20 @@
 # lodash\_debounce todo list
 
+### () - expand av-vjs
+* 4-clear-time-out
+* 5-fps
+
 ### () - new av-nodejs
 * 1-setTimeout example
 
 ### () - new av-client-side
 * 1-request-animation-frame
 
-### () - new av-vjs section
-* 1-setTimeout example
-* 2-setInterval example
+### ( done 12/07/2021 ) - new av-vjs section
+* (done) 1-sto-delay example
+* (done) 2-sto-basic-loop example
+* (done) 3-si-basic example
 
-### () - expand s1-basics
-* 2-loop example
-* rename 2-flush to 3-flush
+### ( done 12/07/2021 ) - expand s1-basics
+* (done) 2-loop example
+* (done) rename 2-flush to 3-flush

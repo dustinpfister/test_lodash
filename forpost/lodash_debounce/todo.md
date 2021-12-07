@@ -4,11 +4,11 @@
 * 4-clear-time-out
 * 5-fps
 
-### () - new av-nodejs
-* 1-setTimeout example
-
 ### () - new av-client-side
 * 1-request-animation-frame
+
+### () - new av-nodejs
+* 1-setTimeout example using process.argv to set count and delay
 
 ### ( done 12/07/2021 ) - new av-vjs section
 * (done) 1-sto-delay example

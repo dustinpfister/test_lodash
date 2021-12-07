@@ -1,6 +1,6 @@
 let _ = require('lodash');
 
-var check = _.debounce(() => {
+let check = _.debounce(() => {
     console.log('checking something...');
     check();
 }, 1000 * 3);

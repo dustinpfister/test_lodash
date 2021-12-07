@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>request animation frame</title>
+    </head>
+    <body>
+        <canvas id="the_canvas" width="640" height="480"></canvas>
+        <script>
+var canvas = document.getElementById('the_canvas'),
+ctx = canvas.getContext('2d'),
+x = 0;
+var loop = function(){
+    requestAnimationFrame(loop);
+    // update x
+    x += 10; x %= canvas.width + 128;
+    // draw to the canvas
+    ctx.fillStyle = 'black';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = 'white';
+    ctx.fillRect(x - 128, 240 - 64, 128, 128);
+};
+loop();
+        </script>
+    </body>
+</html>

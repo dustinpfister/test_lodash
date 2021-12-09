@@ -3,7 +3,7 @@ let fromRed = (r) => {
     b = 255 - r;
     return [r, g, b];
 };
-// Uisng array map to create an array of arrays
+// Using array map to create an array of arrays
 let a = [0, 255].map(fromRed);
 console.log(a);
 // [ [ 0, 128, 255 ], [ 255, 192, 0 ] ]

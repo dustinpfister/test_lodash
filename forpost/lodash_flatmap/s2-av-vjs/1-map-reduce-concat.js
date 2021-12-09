@@ -1,5 +1,3 @@
-let _ = require('lodash');
-
 let fromRed = (r) => {
     let g = 128 + Math.floor(r / 255) * 64,
     b = 255 - r;

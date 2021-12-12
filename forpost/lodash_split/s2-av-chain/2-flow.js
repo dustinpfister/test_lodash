@@ -1,14 +1,20 @@
 let _ = require('lodash');
-
-var css = 'color:red;font-size:12pt;font-family:arial;';
-
-var toArr = _.flow([
-    function (css) {
+ 
+let css = 'color:red;font-size:12pt;font-family:arial;';
+ 
+let toArr = _.flow([
+    (css) => {
         return _.split(css, ';')
     },
-    function (arr) {
+    (arr) => {
         return _.compact(arr);
+    },
+    (arr) => {
+        return _.map(arr, (str) =>{
+            return _.split(str, ':');
+        })
     }
 ]);
-
+ 
 console.log(toArr(css));
+// [['color', 'red'], ['font-size', '12pt'], ['font-family', 'arial']]

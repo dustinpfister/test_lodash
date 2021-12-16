@@ -6,15 +6,18 @@ _.mixin({'wrapNumber': function(n, b){
     b = b === undefined ? 1 : b;
     return (n % b + b) % b;
 }});
+// updated nth2 method that WILL WRAP
+_.mixin({'nth2': function(arr, i){
+    return arr[_.wrapNumber(i, arr.length)];
+}});
+
+// can use the wrap number method directly
 console.log(_.wrapNumber(-1, 10)); // 9
 console.log(_.wrapNumber(10, 10)); // 0
 
-/*
+ // the nth2 method will wrap with negative numbers, 
+ // and index values at and above array length
  var arr = ['fear','the','foo','man','chew'];
  console.log(arr[-3]); // undefined
- 
- // the nth method will wrap with negative numbers
- console.log( _.nth(arr, -3) ); // 'foo'
- // but it will not wrap values at length or higher
-  console.log( _.nth(arr, 6) ); // undefined
-*/
+ console.log( _.nth2(arr, -3) ); // 'foo'
+ console.log( _.nth2(arr, 6) ); // 'the'

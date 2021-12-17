@@ -1,13 +1,6 @@
 _ = require('lodash');
 
 // adding a _.wrapNumber method to lodash
-/*
-_.mixin({'wrapNumber': function(n, b){
-    n = n === undefined ? 0 : n;
-    b = b === undefined ? 1 : b;
-    return (n % b + b) % b;
-}});
-*/
 _.mixin({'wrapNumber': function(n, min, max){
     var r = max - min;
     return (min + ((((n - min) % r) + r) % r));

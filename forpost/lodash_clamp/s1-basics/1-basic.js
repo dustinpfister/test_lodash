@@ -1,6 +1,9 @@
- var arr = ['fear','the','foo','man','chew'];
- 
- console.log(arr[0]); // 'fear'
- console.log(arr[4]); // 'chew'
- console.log(arr[-3]); // undefined
- console.log(arr[5]); // undefined
+var get = function (arr, index, def) {
+    def = def === undefined ? 0 : def;
+    var a = arr[index];
+    return a === undefined ? def : a;
+};
+// arr
+var arr = [1, 2, 3];
+console.log( get(arr, -1) ); // 0
+console.log( get(arr, 3) );  // 0

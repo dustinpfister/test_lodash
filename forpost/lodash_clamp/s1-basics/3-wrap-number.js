@@ -1,37 +1,29 @@
 _ = require('lodash');
-// adding a _.wrapNumber method to lodash
-_.mixin({'mod': function(n, b){
-    return (n % b + b) % b;
-}});
-_.mixin({'mag': function(min, max){
-    return Math.sqrt(  Math.pow(min - max, 2) );
-}});
+
 _.mixin({'wrapNumber': function(n, min, max){
-	
-	var r = _.mag(min, max);
-	var b = _.mod(n, r);
-	
-	return b; // + b / r * r;
-	
-    //n = n === undefined ? 0 : n;
-    //min = min === undefined ? 0 : min;
-    //max = max === undefined ? 1 : max;
-	//let b = max - min;
-    //return min + (n % b + b) % b;
-	//var r = _.mag(min, max); //Math.sqrt(  Math.pow(min - max, 2) );
-	
-	//return _.mod(n + r / 2, r) - r / 2;
-	
+    var range = max - min;
+    return (min + ((((n - min) % range) + range) % range));
 }});
 
-var min = 0,
-max = 5;
+// to high
+console.log( _.wrapNumber(6, -5, 5) ); // -4
+console.log( _.wrapNumber(5, -5, 5) ); // -5
 
-//console.log(_.mag(0, 5)); // 5
-//console.log(_.mag(-5, 5)); // 10
-//console.log( _.mod(-5, 10) ); // 5
+// in range
+console.log( _.wrapNumber(4, -5, 5) ); // 4
+console.log( _.wrapNumber(3, -5, 5) ); // 3
+console.log( _.wrapNumber(2, -5, 5) ); // 2
+console.log( _.wrapNumber(1, -5, 5) ); // 1
+console.log( _.wrapNumber(0, -5, 5) ); // 0
+console.log( _.wrapNumber(-1, -5, 5) ); // -1
+console.log( _.wrapNumber(-2, -5, 5) ); // -2
+console.log( _.wrapNumber(-3, -5, 5) ); // -3
+console.log( _.wrapNumber(-4, -5, 5) ); // -4
+console.log( _.wrapNumber(-5, -5, 5) ); // -5
 
-console.log( _.wrapNumber(5, -5, 5) ); // 4
+// to low
+console.log( _.wrapNumber(-6, -5, 5) ); // 4
+console.log( _.wrapNumber(-7, -5, 5) ); // 3
 
 //console.log( Math.sqrt(  Math.pow(min - max, 2) ) );
 //console.log( _.wrapNumber( -1, min, max ) ); // -1

@@ -7,6 +7,12 @@ _.mixin({'mag': function(min, max){
     return Math.sqrt(  Math.pow(min - max, 2) );
 }});
 _.mixin({'wrapNumber': function(n, min, max){
+	
+	var r = _.mag(min, max);
+	var b = _.mod(n, r);
+	
+	return b; // + b / r * r;
+	
     //n = n === undefined ? 0 : n;
     //min = min === undefined ? 0 : min;
     //max = max === undefined ? 1 : max;
@@ -21,8 +27,11 @@ _.mixin({'wrapNumber': function(n, min, max){
 var min = 0,
 max = 5;
 
-console.log(_.mag(0, 5)); // 5
-console.log(_.mag(-5, 5)); // 10
+//console.log(_.mag(0, 5)); // 5
+//console.log(_.mag(-5, 5)); // 10
+//console.log( _.mod(-5, 10) ); // 5
+
+console.log( _.wrapNumber(5, -5, 5) ); // 4
 
 //console.log( Math.sqrt(  Math.pow(min - max, 2) ) );
 //console.log( _.wrapNumber( -1, min, max ) ); // -1

@@ -1,5 +1,5 @@
 _ = require('lodash');
-
+// using lodash mixin to add a lodash wrap number
 _.mixin({'wrapNumber': function(n, min, max){
     var r = max - min;
     return (min + ((((n - min) % r) + r) % r));

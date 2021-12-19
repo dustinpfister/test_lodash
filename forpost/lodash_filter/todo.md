@@ -5,5 +5,5 @@
 
 ## () - expand basics section
 * 2-array-like
-* 3-named-keys
+* (done) 3-named-keys
 

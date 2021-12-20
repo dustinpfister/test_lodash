@@ -2,12 +2,12 @@ const _ = require('lodash');
 
 // get index by points range
 const getIndexValuesByPoints = (users, pointsMin, pointsMax) => {
-    return _.reduce(users, (acc, obj, index) => {
+    return _.chain(users).reduce((acc, obj, index) => {
         if(obj.points >= pointsMin && obj.points <= pointsMax){
-            acc.push(index);
+            acc.push({index: index, points: obj.points});
         }
         return acc;
-    }, []);
+    }, []).value();
 };
 // demo
 let users = [

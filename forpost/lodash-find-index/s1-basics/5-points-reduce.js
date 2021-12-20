@@ -16,6 +16,4 @@ let users = [
     { name: 'Mark', points: 35},
     { name: 'Bill', points: 935}
 ];
-
-
-console.log( getIndexValuesByPoints(users, 500, 1000) );
+console.log( getIndexValuesByPoints(users, 500, 1000) ); // [ 1, 3 ]

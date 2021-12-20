@@ -1,6 +1,7 @@
 const _ = require('lodash');
 
 // get index by points range
+
 const getIndexByPointsRange = (users, pointsMin, pointsMax) => {
     return _.findIndex(users, (obj) => {
         return obj.points >= pointsMin && obj.points <= pointsMax;
@@ -15,6 +16,5 @@ let users = [
 ];
 
 
-let sortedUsers = _.chain(users).sortBy(users, ['name']).value();
+let sortedUsers = _.chain(users).sortBy((obj)=>{ return obj.points}).reverse().value();
 console.log(sortedUsers);
-

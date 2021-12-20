@@ -1,5 +1,10 @@
 # lodash_countby todo list
 
+## () - new ver basic example for the basics section
+* new 1-basic example
+* rename basic.js to 2-function.js
+* rename property as 3-property.js
+
 ## ( done 10/05/2021 ) new section on keyby and group by lodash methods
 * (done) start a keyby example
 * (done) start a groupby example

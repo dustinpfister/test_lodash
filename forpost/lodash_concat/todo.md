@@ -1,4 +1,4 @@
 # lodash concat list
 
-## () - expand basics section
-* 3-chain-flatten example
+## ( done 12/21/2021 ) - expand basics section
+* (done) 3-chain-flatten example

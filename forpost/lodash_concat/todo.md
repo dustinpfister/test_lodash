@@ -1,7 +1,7 @@
 # lodash concat list
 
-## () - expand basics
-* 4-sum example
+## ( done 12/21/2021 ) - expand basics
+* (done) 4-sum example
 
 ## ( done 12/21/2021 ) - expand av-vjs section
 * (done) 2-join-split

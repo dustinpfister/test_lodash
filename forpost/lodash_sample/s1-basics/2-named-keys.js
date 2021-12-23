@@ -5,4 +5,4 @@ let obj = {
     baz: 7
 };
 let n = _.sample(obj);
-console.log(n)
+console.log(n);

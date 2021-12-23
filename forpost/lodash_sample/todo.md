@@ -3,5 +3,5 @@
 ## () - expand av-vjs section
 * 2-named-keys example 
 
-## () - expand basics section
-* 2-named-keys  example of lodash sample using a named key collection
+## ( done 12/23/2021 ) - expand basics section
+* (done) 2-named-keys  example of lodash sample using a named key collection

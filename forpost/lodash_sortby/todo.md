@@ -1,5 +1,8 @@
 # lodash sort by todo
 
+## () expand av-vjs section
+* 5-copy-array example
+
 ## () - expand av-vjs section
 * 3-strings example
 * 4-named-keys example that involves using array sort to sort a named collection

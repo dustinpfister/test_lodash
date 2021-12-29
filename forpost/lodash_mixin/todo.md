@@ -1,5 +1,8 @@
 ## lodash\_mixin todo list
 
+### () new ex-uid method section
+* start a uid example section based off of what I made for my lodash uniqeid post
+
 ### () expand av-object section
 * 2-class example
 

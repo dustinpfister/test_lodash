@@ -11,3 +11,6 @@ let u = new Unit({ x : 12,y : 5});
 _.forIn(u, function (val, key, obj) {
     console.log(key + ' : '+val);
 });
+// x: 12
+// y: 5
+// size: 64

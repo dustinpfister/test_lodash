@@ -11,3 +11,5 @@ let u = new Unit({ x : 12,y : 5});
 _.forOwn(u, function (val, key, obj) {
     console.log(key + ' : '+val);
 });
+// x: 12
+// y: 5

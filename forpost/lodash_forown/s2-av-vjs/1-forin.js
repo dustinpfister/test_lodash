@@ -15,3 +15,6 @@ for(key in u){
         console.log(key + ' : '+val);
     }
 }
+// x: 12
+// y: 5
+

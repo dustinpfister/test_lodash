@@ -8,6 +8,6 @@ let Unit = function (obj) {
 Unit.prototype.size = 64;
 // DEMO using lodash for own method
 let u = new Unit({ x : 12,y : 5});
-_.forOwn(u, function (val, key, obj) {
+_.forIn(u, function (val, key, obj) {
     console.log(key + ' : '+val);
 });

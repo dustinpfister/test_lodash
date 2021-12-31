@@ -1,4 +1,40 @@
-let distance = function (x1, y1, x2, y2) {
-    return Math.round(Math.sqrt(Math.pow(x1 - x2, 2) + Math.pow(y1 - y2, 2)));
-};
-console.log(distance(10, 15, 90, 22)); // 80
+let _ = require('lodash');
+
+let func1 = _.flow([
+    // chunk into an array of arrays
+    (arr) => {
+        return _.chunk(arr, 3)
+    },
+    // create objects and store element value as
+    // a prop n prop of the new object
+    (grid) => {
+        return _.map(grid, (row, y) => {
+            return row.map((n, x, col) => {
+                return {
+                    x: x,
+                    y: y,
+                    i: y * 3 + x,
+                    n: n
+                };
+            })
+        })
+    },
+    // flatten back
+    _.flatten
+]);
+// demo
+let a = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+console.log(func1(a));
+/*
+[ 
+  { x: 0, y: 0, i: 0, n: 1 },
+  { x: 1, y: 0, i: 1, n: 2 },
+  { x: 2, y: 0, i: 2, n: 3 },
+  { x: 0, y: 1, i: 3, n: 4 },
+  { x: 1, y: 1, i: 4, n: 5 },
+  { x: 2, y: 1, i: 5, n: 6 },
+  { x: 0, y: 2, i: 6, n: 7 },
+  { x: 1, y: 2, i: 7, n: 8 },
+  { x: 2, y: 2, i: 8, n: 9 }
+]
+*/

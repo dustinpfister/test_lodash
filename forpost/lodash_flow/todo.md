@@ -6,5 +6,5 @@
 * 3-chain
 
 
-## () - rename basics section to ex-distance
-* rename the basic folder to an example folder
+## ( done 12/31/2021 ) - rename basics section to ex-distance
+* (done) rename the basic folder to an example folder

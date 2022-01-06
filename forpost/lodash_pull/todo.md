@@ -5,12 +5,12 @@
 * 2-pull-method
 
 ### () expand av-other-lodash
-* 5-filter
-* 6-reduce
+* 4-filter
+* 5-reduce
 
 ### () rename av-without to av-other-lodash and expand
-* 3-eq
-* 4-remove
+* 2-eq
+* (done) 3-remove
 
 ### ( done 01/06/2022 ) - expand basics section
 * (done) 2-mutate-in-place

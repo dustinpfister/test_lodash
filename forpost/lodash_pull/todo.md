@@ -8,8 +8,8 @@
 * 4-filter
 * 5-reduce
 
-### () rename av-without to av-other-lodash and expand
-* 2-eq
+### ( done 01/06/2022 ) rename av-without to av-other-lodash and expand
+* (done) 2-eq
 * (done) 3-remove
 
 ### ( done 01/06/2022 ) - expand basics section

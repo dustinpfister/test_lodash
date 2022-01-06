@@ -1,11 +1,16 @@
 ## lodash pull todo list
 
+### () - expand av-vjs
+* 1-object-is
+* 2-pull-method
+
+### () expand av-other-lodash
+* 5-filter
+* 6-reduce
 
 ### () rename av-without to av-other-lodash and expand
 * 3-eq
 * 4-remove
-* 5-filter
-* 6-reduce
 
 ### ( done 01/06/2022 ) - expand basics section
 * (done) 2-mutate-in-place

@@ -10,7 +10,6 @@ utils.chunk = function (arr, size) {
     }
     return chunkedArr;
 };
-
 // basic example
 let arr = ['one', 'two', 'three', 'four', 'five', 'six'];
 console.log(utils.chunk(arr, 2));

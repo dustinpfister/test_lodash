@@ -2,9 +2,9 @@
 
 ## () - expand basics section
 
-## () - expand av-vjs section
-* 2-while - while loop example
-* 3-object-keys - example using Object.keys with array forEach
+## ( done 01/13/2022 ) - expand av-vjs section
+* (done) 2-object-keys - example using Object.keys with array forEach
+* (done) 3-while - while loop example
 
 ## ( done 01/13/2022 ) - new vjs section
 * (done) 1-basic

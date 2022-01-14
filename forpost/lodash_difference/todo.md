@@ -1,4 +1,4 @@
 # lodash difference todo list
 
-## () - new av-vjs section
-* 1-filter
+## ( done 01/14/2022 ) - new av-vjs section
+* (done) 1-filter

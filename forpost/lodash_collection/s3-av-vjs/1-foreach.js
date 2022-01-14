@@ -1,13 +1,12 @@
-let _ = require('lodash');
-
-let color = {
-    a: 255,
-    r: 128,
-    b: 0,
-    g: 64
+let a = {
+    0: 1,
+    1: 2,
+    2: 3
 };
-
-let cArr = _.at(color, ['r','g','b', 'a']);
-
-console.log(cArr);
-// [ 128, 64, 0, 255 ]
+Object.keys(a).forEach((key) => {
+    var n = a[key];
+    console.log( Math.pow(2, n) );
+});
+// 2
+// 4
+// 8

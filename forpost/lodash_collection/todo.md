@@ -7,7 +7,7 @@
 
 ## () - expand av-lodash-collection-methods
 * (done) 2-countby
-* 3-filter
+* (done) 3-filter
 * 4-find
 
 ### ( done 01/14/2022 ) - First set of examples

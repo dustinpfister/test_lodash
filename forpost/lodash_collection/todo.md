@@ -5,10 +5,10 @@
 * 6-map
 * 7-reduce
 
-## () - expand av-lodash-collection-methods
+## ( done 01/15/2022 ) - expand av-lodash-collection-methods
 * (done) 2-countby
 * (done) 3-filter
-* 4-find
+* (done) 4-find
 
 ### ( done 01/14/2022 ) - First set of examples
 * (done) start basics section with at least one example

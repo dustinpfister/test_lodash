@@ -6,7 +6,7 @@
 * 7-reduce
 
 ## () - expand av-lodash-collection-methods
-* 2-countby
+* (done) 2-countby
 * 3-filter
 * 4-find
 

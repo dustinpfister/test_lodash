@@ -12,6 +12,20 @@ Foo.prototype.bar = function(){
 };
 
 
+let func = (v, k) => {
+    console.log(k);
+};
+
 let foo = new Foo(1,2,3);
-console.log(foo)
+
+
+// for each is a 'collection' method as such
+// if will loop over all public own properties
+_.forEach(foo, func);
+// 0 1 2
+
+// the forIn Object method will loop over all pubic own properties
+// as well as all public properties in the prototype object of the Class
+_.forIn(foo, func);
+// 0 1 2 'bar'
 

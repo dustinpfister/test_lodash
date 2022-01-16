@@ -11,4 +11,4 @@
 
 ## () - new basics section started
 * (done) 1-define prop
-* 2-for-each-in
+* (done) 2-for-each-in

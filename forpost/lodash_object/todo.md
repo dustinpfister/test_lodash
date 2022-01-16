@@ -9,6 +9,10 @@
 * 1-chunk
 * 2-flatten
 
-## () - new basics section started
+## ( ) - expand basics section
+* 2-constructor example
+* rename 2-for-each-in to 3-for-each-in
+
+## ( done 01/16/2022 ) - new basics section started
 * (done) 1-define prop
 * (done) 2-for-each-in

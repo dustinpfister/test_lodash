@@ -10,5 +10,5 @@
 * 2-flatten
 
 ## () - new basics section started
-* 1-define prop
+* (done) 1-define prop
 * 2-for-each-in

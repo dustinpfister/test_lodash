@@ -1,8 +1,8 @@
 # lodash assign todo
 
 ## () expand basics section
-* rename 1-basic to 1-mutate-in-place
-* new 2-new-object example
+* (done) rename 1-basic to 1-mutate-in-place
+* (done) new 2-new-object example
 * new 3-order example
 * rename 2-parts to 4-parts
 

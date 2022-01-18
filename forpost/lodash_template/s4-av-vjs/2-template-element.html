@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Template Element Hello World</title>
+    <style>
+.wrap_mess{ color: red;}
+    </style>
+  </head>
+  <body>
+    <h1>Template Element Hello World</h1>
+    <template id="messTemplate">
+        <p class="wrap_mess">
+        </p>
+    </template>
+    <script>
+// feature test
+var hasTemplates = function(){
+    return 'content' in document.createElement('template');
+};
+// if we have templates
+if (hasTemplates()) {
+    var template = document.querySelector('#messTemplate');
+    var clone = template.content.cloneNode(true);
+    clone.querySelector('.wrap_mess').innerText = 'Hello World';
+    document.body.appendChild(clone);
+}else{
+    document.write('This web app requires support for Template Elements. Please use a more up to date web browser.');
+}
+    </script>
+  </body>
+</html>

@@ -1,6 +1,7 @@
 # lodash template todo list
 
-### () - new av-vjs section
-* 1-basic basic template method example
-
 ### () - 
+
+### () - new av-vjs section
+* (done) 1-backticks
+* 2-template-elements

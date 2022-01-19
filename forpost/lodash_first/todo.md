@@ -4,6 +4,7 @@
 * 3-find example
 
 ## () - expand basics section
+* 2-no-mutate
 
 ## () - expand av-vjs section
 * 1-bracket-zero

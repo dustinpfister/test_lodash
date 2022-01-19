@@ -3,9 +3,6 @@
 ## () - expand av-other-lodash section
 * 3-find example
 
-## () - expand basics section
-* 2-no-mutate
-
 ## () - expand av-vjs section
 * 1-bracket-zero
 * 2-bracket-len-minus
@@ -16,3 +13,7 @@
 * 1-slice example
 * 2-last example
 * rename 1-slice-sortby to 3-slice-sortby
+
+## ( done 01/19/2022 ) - expand basics section
+* (done) 2-no-mutate
+* (done) 3-default

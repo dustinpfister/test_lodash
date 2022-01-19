@@ -7,6 +7,6 @@
 * 1-defaults method example
 * 2-assign method example
 
-### () - expand basics section
-* new 1-basic example
-* rename 1-enemy to 2-enemy
+### ( done 01/19/2022 ) - expand basics section
+* (done) new 1-basic example
+* (done) rename 1-enemy to 2-enemy

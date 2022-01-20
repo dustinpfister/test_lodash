@@ -5,6 +5,6 @@
 * 2-instance-of
 * 3-constructor
 
-### () - new basic section examples
+### ( done 01/20/2022 ) - new basic section examples
 * (done) 1-basic
-* 2-is-array-like
+* (done) 2-is-array-like

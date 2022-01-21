@@ -1,4 +1,4 @@
 # lodash thru todo list
 
-## () - start basic section
-* 1-basic
+## ( done 01/21/2022 ) - start basic section
+* (done) 1-basic

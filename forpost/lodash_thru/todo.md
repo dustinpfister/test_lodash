@@ -2,6 +2,7 @@
 
 ## () - new av-other-lodash section
 * 1-tap
+* 2-mixin
 
 ## ( done 01/21/2022 ) - expand basic section
 * (done) 1-calling-methods

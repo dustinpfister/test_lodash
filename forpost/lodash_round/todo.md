@@ -6,5 +6,5 @@
 ## () - expand av-vjs section
 * (done) new 1-basic example using just Math.round
 * (done) new 2-ceil-floor example
-* new 3-tofixed-parseint example
-* rename 1-vjs-round to 4-vjs-round
+* new 3-tofixed-parse example
+* (done) rename 1-vjs-round to 4-vjs-round

@@ -1,5 +1,3 @@
-let _ = require('lodash');
-
 let round = (n, d) => {
     d = d === undefined ? 2 : d;
     return parseFloat( n.toFixed(d) );

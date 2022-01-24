@@ -1,9 +1,9 @@
 let _ = require('lodash');
 
 
-var obj = {foo: 'bar', anwser: 42};
+var obj = {foo: 'bar', answer: 42};
  
 console.log(_.map(obj, function(item){
     return item;
 }));
-// ['bar', 42]
+// ['bar',42]

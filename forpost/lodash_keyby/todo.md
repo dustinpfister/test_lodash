@@ -7,7 +7,7 @@
 * 1-groupBy
 * 2-countBy
 
-## () - expand av-vjs section
+## ( done 01/26/2022 ) - expand av-vjs section
 * (done) 2-object-keys-foreach
-* 3-method example
+* (done) 3-method example
 

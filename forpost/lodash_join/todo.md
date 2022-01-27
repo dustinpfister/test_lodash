@@ -12,6 +12,6 @@
 * 2-map
 * rename 1-chain to 3-chain
 
-## () - expand av-vjs section
+## ( done 01/27/2022 ) - expand av-vjs section
 * (done) 2-split
-* 3-filter
+* (done) 3-filter

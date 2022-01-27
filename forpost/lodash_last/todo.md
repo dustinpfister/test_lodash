@@ -4,3 +4,5 @@
 * 2-collection
 
 ## () - expand av-other-lodash
+* 2-head
+* 3-slice

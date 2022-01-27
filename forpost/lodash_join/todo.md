@@ -1,8 +1,8 @@
 # lodash join todo
 
 ## () - expand av-vjs section
-* 4-reduce
-* 5-filter
+* 4-map
+* 5-reduce
 
 ## () - expand basics section
 * 2-empty-string
@@ -13,5 +13,5 @@
 * rename 1-chain to 3-chain
 
 ## () - expand av-vjs section
-* 2-split
-* 3-map
+* (done) 2-split
+* 3-filter

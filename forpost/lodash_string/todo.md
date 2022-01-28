@@ -14,8 +14,8 @@
 * 2-escape
 * 3-pad
 
-### (  ) - new basics section
-* 1-basic
+### ( done 01/28/2022 ) - new basics section
+* (done) 1-basic
 * (done) 2-chain-split-trim
-* 3-chain-words
+* (done) 3-chain-words
 

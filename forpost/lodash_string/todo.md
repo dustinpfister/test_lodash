@@ -15,6 +15,7 @@
 * 3-pad
 
 ### (  ) - new basics section
-* 1-chain-split-trim
-* 2-chain-words
+* 1-basic
+* (done) 2-chain-split-trim
+* 3-chain-words
 

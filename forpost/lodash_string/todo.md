@@ -9,10 +9,10 @@
 * 5-split
 * 6-template
 
-### (  ) - new av-methods section
-* 1-deburr
-* 2-escape
-* 3-pad
+### ( done 01/28/2022 ) - new av-methods section
+* (done) 1-deburr
+* (done) 2-escape
+* (done) 3-pad
 
 ### ( done 01/28/2022 ) - new basics section
 * (done) 1-basic

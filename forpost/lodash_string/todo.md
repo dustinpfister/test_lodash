@@ -11,6 +11,8 @@
 
 ### () - new av-vjs section
 * 1-split
+* 2-chain
+* 3-replace
 
 ### ( done 01/28/2022 ) - new av-methods section
 * (done) 1-deburr

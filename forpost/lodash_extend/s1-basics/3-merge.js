@@ -1,5 +1,5 @@
 let _ = require('lodash');
- 
+
 // and object with own, and inherited properties,
 // and a nested object as one of its own properties
 let a = _.create({
@@ -10,11 +10,8 @@ let a = _.create({
     }, {
         own_prop: 37
     });
- 
 // another object, with just own properties
-let b = {
-    own_prop_two: true
-};
+let b = { own_prop_two: true};
  
 // extend will assign own, and inherited properties
 let c = _.extend({}, a, b);

@@ -9,10 +9,10 @@
 * 5-split
 * 6-template
 
-### () - new av-vjs section
-* 1-split
-* 2-chain
-* 3-replace
+### ( done 01/29/2022 ) - new av-vjs section
+* (done) 1-split
+* (done) 2-chain
+* (done) 3-replace
 
 ### ( done 01/28/2022 ) - new av-methods section
 * (done) 1-deburr

@@ -1,5 +1,3 @@
-let _ = require('lodash');
-
 let a = ',1,2,3,'.split(',')
 .reduce((acc, el) => {
     if(el != ''){

@@ -17,4 +17,4 @@ let b = {
 console.log( _.extend({},a,b) ); // { own_prop: 37, proto_prop: 42, own_prop_two: true }
  
 // _.assign will not assign inherited properties
-console.log( _.assign({},a,b) ); // { own_prop: 37, proto_prop: 42, own_prop_two: true }
+console.log( _.assign({},a,b) ); // { own_prop: 37, own_prop_two: true }

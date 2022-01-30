@@ -1,0 +1,8 @@
+<script>
+var sizeDataStr = function(str){
+    return new Blob([str]).size;
+};
+
+console.log( sizeDataStr('\u0020') );
+console.log( sizeDataStr('\u0080') );
+</script>

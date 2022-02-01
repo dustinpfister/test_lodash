@@ -1,6 +1,3 @@
-let _ = require('lodash');
-
-
 let MyClass = function(x, y){
     this.x = x;
     this.y = y;

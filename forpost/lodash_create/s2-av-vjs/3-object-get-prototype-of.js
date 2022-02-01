@@ -10,5 +10,4 @@ let obj = Object.create(methods, {
     y: {value:15, enumerable: true, writable: true}}
 );
 
-obj.move(2, 5);
-console.log(obj); // { x: 7, y: 20 }
+console.log( Object.getPrototypeOf(obj) ); // { move: [Function: move] }

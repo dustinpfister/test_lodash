@@ -8,10 +8,9 @@ let methods = {
 };
 
 let obj = Object.create(methods, {
-    x: {value:5, writable: false}, 
-    y: {value:15,writable: true}}
+    x: {value:5, enumerable: true, writable: true}, 
+    y: {value:15, enumerable: true, writable: true}}
 );
 
 obj.move(2, 5);
-
-console.log(obj.x, obj.y); // 5 20
+console.log(obj); // { x: 7, y: 20 }

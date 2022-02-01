@@ -6,7 +6,7 @@
 
 ## () - expand basics section
 
-## () - expand av-vjs section
+## ( done 01/01/2022 ) - expand av-vjs section
 * (done) 2-constructor
 * (done) 3-object-get-prototype-of
 

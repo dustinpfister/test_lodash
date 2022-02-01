@@ -8,7 +8,5 @@ let methods = {
 };
 
 let obj = _.create(methods, {x: 5, y: 15} );
-
 obj.move(2, 5);
-
 console.log(obj); // { x: 7, y: 20 }

@@ -7,8 +7,11 @@ let methods = {
     }
 };
 
-let obj = Object.create(methods, {x: {value:5,writable: true}, y: {value:15,writable: true}});
+let obj = Object.create(methods, {
+    x: {value:5, writable: false}, 
+    y: {value:15,writable: true}}
+);
 
-obj.move(5, 5);
+obj.move(2, 5);
 
-console.log(obj.x, obj.y); // 10 20
+console.log(obj.x, obj.y); // 5 20

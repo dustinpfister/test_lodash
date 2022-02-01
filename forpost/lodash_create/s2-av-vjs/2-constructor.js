@@ -12,6 +12,6 @@ let obj = Object.create(methods, {
     y: { value:15 }
 });
 
-obj.move(5, 5);
+obj.move(2, 5);
 
 console.log(obj.x, obj.y); // 10 20

@@ -1,17 +1,17 @@
 let _ = require('lodash');
 
-let methods = {
-    move: function (x, y) {
-        this.x += x;
-        this.y += y;
-    }
+
+let MyClass = function(x, y){
+    this.x = x;
+    this.y = y;
 };
 
-let obj = Object.create(methods, {
-    x: { value:5 }, 
-    y: { value:15 }
-});
 
+MyClass.prototype.move = function (dx, dy) {
+    this.x += dx;
+    this.y += dy;
+};
+
+let obj = new MyClass(5, 15);
 obj.move(2, 5);
-
-console.log(obj.x, obj.y); // 10 20
+console.log(obj); // { x: 7, y: 20 }

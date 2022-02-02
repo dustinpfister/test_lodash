@@ -1,4 +1,4 @@
 # lodash bind
 
-## () - expand av-vjs section
-* 2-func-apply example
+## ( done 02/02/2022 ) - expand av-vjs section
+* (done) 2-func-apply example

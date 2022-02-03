@@ -1,4 +1,8 @@
 # lodash set todo list
 
-### () - new av-vjs section
-* 1-vjs-set-method
+### () - new av-other-lodash section
+* 1-get
+* 2-has
+
+### ( done 02/03/2022 ) - new av-vjs section
+* (done) 1-vjs-set-method

@@ -1,3 +1,4 @@
+// from js-javascript-example-turn-based-rpg in my test_ vjs repository
 var utils = {};
  
 // set a given path to a source object to a given value,
